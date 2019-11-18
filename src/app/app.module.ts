@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 // other imports
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,7 +19,8 @@ import { ListComponent } from './list/list.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule //Added
+    FormsModule, //Added
+    HttpClientModule //Added
   ],
   providers: [],
   bootstrap: [AppComponent]
